@@ -96,8 +96,6 @@ class CGD_ShoppAdvancedDiscountRules￼ {
 
 		if ( $this->_codesapplied > $post_match_count ) {
 			shopp_add_error(__('One or more promotions no longer applies.', 'Shopp'), SHOPP_TRXN_ERR);
-			Shopp::redirect( Shopp::url(false, 'checkout', ShoppOrder()->security()) );
-
 		}
 	}
 }
